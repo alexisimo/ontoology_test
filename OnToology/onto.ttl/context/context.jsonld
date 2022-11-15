@@ -1,0 +1,2848 @@
+{
+  "@context" : {
+    "waterPressureMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/waterPressureMax",
+      "@type" : "@id"
+    },
+    "isDerivedFrom" : {
+      "@id" : "https://saref.etsi.org/saref4city/isDerivedFrom",
+      "@type" : "@id"
+    },
+    "fluidFlowRateMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/fluidFlowRateMax",
+      "@type" : "@id"
+    },
+    "workingPressureMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/workingPressureMin",
+      "@type" : "@id"
+    },
+    "connectedThrough" : {
+      "@id" : "https://saref.etsi.org/saref4syst/connectedThrough",
+      "@type" : "@id"
+    },
+    "actsUpon" : {
+      "@id" : "https://saref.etsi.org/core/actsUpon",
+      "@type" : "@id"
+    },
+    "asKML" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asKML",
+      "@type" : "http://www.opengis.net/ont/geosparql#kmlLiteral"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "Switch" : {
+      "@id" : "https://saref.etsi.org/core/Switch"
+    },
+    "waterStorageCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/waterStorageCapacity",
+      "@type" : "@id"
+    },
+    "valveMechanism" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/valveMechanism",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMetricSize" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasMetricSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Crop" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Crop"
+    },
+    "hasVolume" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasVolume",
+      "@type" : "@id"
+    },
+    "capacityControlType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/capacityControlType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "mechanicalOperated" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/mechanicalOperated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "CooledBeam" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/CooledBeam"
+    },
+    "Yield" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Yield"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://saref.etsi.org/core/UnitOfMeasure"
+    },
+    "secondaryCurrent" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondaryCurrent",
+      "@type" : "@id"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "hasManufacturer" : {
+      "@id" : "https://saref.etsi.org/core/hasManufacturer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPrice" : {
+      "@id" : "https://saref.etsi.org/core/hasPrice",
+      "@type" : "@id"
+    },
+    "NotifyCommand" : {
+      "@id" : "https://saref.etsi.org/core/NotifyCommand"
+    },
+    "transformerVectorGroup" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/transformerVectorGroup",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SolarDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/SolarDevice"
+    },
+    "DateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#DateTimeDescription"
+    },
+    "teTime" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/teTime",
+      "@type" : "@id"
+    },
+    "Meter" : {
+      "@id" : "https://saref.etsi.org/core/Meter"
+    },
+    "secondaryAirFlowRateMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondaryAirFlowRateMin",
+      "@type" : "@id"
+    },
+    "affiliation" : {
+      "@id" : "http://schema.org/affiliation",
+      "@type" : "@id"
+    },
+    "intervalFinishes" : {
+      "@id" : "http://www.w3.org/2006/time#intervalFinishes",
+      "@type" : "@id"
+    },
+    "Burner" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Burner"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isControlledByDevice",
+      "@type" : "@id"
+    },
+    "featureIsControlledByDevice" : {
+      "@id" : "https://saref.etsi.org/saref4watr/featureIsControlledByDevice",
+      "@type" : "@id"
+    },
+    "nominalPowerRate" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalPowerRate",
+      "@type" : "@id"
+    },
+    "primaryApparentPower" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/primaryApparentPower",
+      "@type" : "@id"
+    },
+    "temperatureRating" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/temperatureRating",
+      "@type" : "@id"
+    },
+    "sfIntersects" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfIntersects",
+      "@type" : "@id"
+    },
+    "ChemicalProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/ChemicalProperty"
+    },
+    "CommunicationAppliance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/CommunicationAppliance"
+    },
+    "colorRenderingIndex" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/colorRenderingIndex",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "colorAppearance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/colorAppearance",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EnergyUnit" : {
+      "@id" : "https://saref.etsi.org/core/EnergyUnit"
+    },
+    "sfCrosses" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfCrosses",
+      "@type" : "@id"
+    },
+    "TubeBundle" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/TubeBundle"
+    },
+    "TAXRANK_0000000" : {
+      "@id" : "http://purl.obolibrary.org/obo/TAXRANK_0000000"
+    },
+    "member" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#member",
+      "@type" : "@id"
+    },
+    "nominalCoolingCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalCoolingCapacity",
+      "@type" : "@id"
+    },
+    "controlStrategy" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/controlStrategy",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Commodity" : {
+      "@id" : "https://saref.etsi.org/core/Commodity"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "DistributionSystem" : {
+      "@id" : "https://saref.etsi.org/saref4watr/DistributionSystem"
+    },
+    "connectionPointOf" : {
+      "@id" : "https://saref.etsi.org/saref4syst/connectionPointOf",
+      "@type" : "@id"
+    },
+    "Filter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Filter"
+    },
+    "ambientDesignWetBulbTemperature" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ambientDesignWetBulbTemperature",
+      "@type" : "@id"
+    },
+    "hasMetricSpatialResolution" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasMetricSpatialResolution",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "secondaryApparentPower" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondaryApparentPower",
+      "@type" : "@id"
+    },
+    "nominalMoistureGain" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalMoistureGain",
+      "@type" : "@id"
+    },
+    "Lamp" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Lamp"
+    },
+    "SoilTensiometer" : {
+      "@id" : "https://saref.etsi.org/saref4agri/SoilTensiometer"
+    },
+    "hasTRS" : {
+      "@id" : "http://www.w3.org/2006/time#hasTRS",
+      "@type" : "@id"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "hasLength" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasLength",
+      "@type" : "@id"
+    },
+    "finishColor" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/finishColor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "VibrationIsolator" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/VibrationIsolator"
+    },
+    "Humidity" : {
+      "@id" : "https://saref.etsi.org/core/Humidity"
+    },
+    "rcc8eq" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8eq",
+      "@type" : "@id"
+    },
+    "hasModel" : {
+      "@id" : "https://saref.etsi.org/core/hasModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "inXSDgYear" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "TimePosition" : {
+      "@id" : "http://www.w3.org/2006/time#TimePosition"
+    },
+    "KeyPerformanceIndicatorAssessment" : {
+      "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicatorAssessment"
+    },
+    "FarmHolding" : {
+      "@id" : "https://saref.etsi.org/saref4agri/FarmHolding"
+    },
+    "SmokeSensor" : {
+      "@id" : "https://saref.etsi.org/core/SmokeSensor"
+    },
+    "quantifiesKPI" : {
+      "@id" : "https://saref.etsi.org/saref4city/quantifiesKPI",
+      "@type" : "@id"
+    },
+    "Platform" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Platform"
+    },
+    "pressureRating" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/pressureRating",
+      "@type" : "@id"
+    },
+    "airFlowRateMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/airFlowRateMax",
+      "@type" : "@id"
+    },
+    "TimeBasedTariff" : {
+      "@id" : "https://saref.etsi.org/saref4watr/TimeBasedTariff"
+    },
+    "hasSpace" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hasSpace",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "EnergyAsset" : {
+      "@id" : "http://bigg-project.eu/ontology#EnergyAsset"
+    },
+    "nominalStaticPressure" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalStaticPressure",
+      "@type" : "@id"
+    },
+    "coilWidth" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/coilWidth",
+      "@type" : "@id"
+    },
+    "url" : {
+      "@id" : "https://schema.org/url"
+    },
+    "MeteringFunction" : {
+      "@id" : "https://saref.etsi.org/core/MeteringFunction"
+    },
+    "heatTransferDimension" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/heatTransferDimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Deployment" : {
+      "@id" : "http://www.w3.org/ns/ssn/Deployment"
+    },
+    "manages" : {
+      "@id" : "http://bigg-project.eu/ontology#manages",
+      "@type" : "@id"
+    },
+    "ehInside" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehInside",
+      "@type" : "@id"
+    },
+    "ProtectiveDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ProtectiveDevice"
+    },
+    "hasDurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#hasDurationDescription",
+      "@type" : "@id"
+    },
+    "nominalFrequency" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalFrequency",
+      "@type" : "@id"
+    },
+    "TemporalDuration" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalDuration"
+    },
+    "pumpFlowRateMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/pumpFlowRateMin",
+      "@type" : "@id"
+    },
+    "FlowInstrument" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FlowInstrument"
+    },
+    "dayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#dayOfWeek",
+      "@type" : "@id"
+    },
+    "standard" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/standard",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "colorTemperature" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/colorTemperature",
+      "@type" : "@id"
+    },
+    "appliesTo" : {
+      "@id" : "https://saref.etsi.org/saref4watr/appliesTo",
+      "@type" : "@id"
+    },
+    "bladeAction" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/bladeAction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#DayOfWeek"
+    },
+    "hasThresholdMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/hasThresholdMeasurement",
+      "@type" : "@id"
+    },
+    "intervalMeets" : {
+      "@id" : "http://www.w3.org/2006/time#intervalMeets",
+      "@type" : "@id"
+    },
+    "Main" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Main"
+    },
+    "measuresFeature" : {
+      "@id" : "https://saref.etsi.org/saref4watr/measuresFeature",
+      "@type" : "@id"
+    },
+    "nominalEfficiency" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalEfficiency",
+      "@type" : "@id"
+    },
+    "DurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#DurationDescription"
+    },
+    "accomplishes" : {
+      "@id" : "https://saref.etsi.org/core/accomplishes",
+      "@type" : "@id"
+    },
+    "isLocationOf" : {
+      "@id" : "https://saref.etsi.org/saref4agri/isLocationOf",
+      "@type" : "@id"
+    },
+    "SanitaryTerminal" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/SanitaryTerminal"
+    },
+    "Humidifier" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Humidifier"
+    },
+    "hasDefrost" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hasDefrost",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "AcceptabilityProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/AcceptabilityProperty"
+    },
+    "asGeoJSON" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asGeoJSON",
+      "@type" : "http://www.opengis.net/ont/geosparql#geoJSONLiteral"
+    },
+    "Organization" : {
+      "@id" : "https://schema.org/Organization"
+    },
+    "waterInletTemperatureMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/waterInletTemperatureMin",
+      "@type" : "@id"
+    },
+    "closeOffRating" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/closeOffRating",
+      "@type" : "@id"
+    },
+    "BuildingDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/BuildingDevice"
+    },
+    "hasDeploymentPeriod" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasDeploymentPeriod",
+      "@type" : "@id"
+    },
+    "after" : {
+      "@id" : "http://www.w3.org/2006/time#after",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "frameDepth" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/frameDepth",
+      "@type" : "@id"
+    },
+    "ShadingDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ShadingDevice"
+    },
+    "internalRefrigerantVolume" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/internalRefrigerantVolume",
+      "@type" : "@id"
+    },
+    "hasCalculationPeriod" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasCalculationPeriod",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "frameType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/frameType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "startingTime" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/startingTime",
+      "@type" : "@id"
+    },
+    "CloseCommand" : {
+      "@id" : "https://saref.etsi.org/core/CloseCommand"
+    },
+    "GeneralDateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#GeneralDateTimeDescription"
+    },
+    "connectedTo" : {
+      "@id" : "https://saref.etsi.org/saref4syst/connectedTo",
+      "@type" : "@id"
+    },
+    "hasExpirationDate" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasExpirationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "intervalOverlappedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalOverlappedBy",
+      "@type" : "@id"
+    },
+    "workingPressureMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/workingPressureMax",
+      "@type" : "@id"
+    },
+    "basinReserveVolume" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/basinReserveVolume",
+      "@type" : "@id"
+    },
+    "connectsAt" : {
+      "@id" : "https://saref.etsi.org/saref4syst/connectsAt",
+      "@type" : "@id"
+    },
+    "height" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/height",
+      "@type" : "@id"
+    },
+    "SinkAsset" : {
+      "@id" : "https://saref.etsi.org/saref4watr/SinkAsset"
+    },
+    "TemporalUnit" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalUnit"
+    },
+    "hosts" : {
+      "@id" : "http://www.w3.org/ns/sosa/hosts",
+      "@type" : "@id"
+    },
+    "OffState" : {
+      "@id" : "https://saref.etsi.org/core/OffState"
+    },
+    "hasName" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "patternType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/patternType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "forAbsoluteTimeAtDay" : {
+      "@id" : "https://saref.etsi.org/saref4watr/forAbsoluteTimeAtDay",
+      "@type" : "@id"
+    },
+    "numberOfGangs" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOfGangs",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "asWKT" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asWKT",
+      "@type" : "http://www.opengis.net/ont/geosparql#wktLiteral"
+    },
+    "forVolumeConsumption" : {
+      "@id" : "https://saref.etsi.org/saref4watr/forVolumeConsumption"
+    },
+    "intervalContains" : {
+      "@id" : "http://www.w3.org/2006/time#intervalContains",
+      "@type" : "@id"
+    },
+    "waterFlowControlSystemType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/waterFlowControlSystemType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "externalSurfaceArea" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/externalSurfaceArea",
+      "@type" : "@id"
+    },
+    "lightEmitterNominalPower" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/lightEmitterNominalPower",
+      "@type" : "@id"
+    },
+    "hydraulicDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hydraulicDiameter",
+      "@type" : "@id"
+    },
+    "River" : {
+      "@id" : "https://saref.etsi.org/saref4watr/River"
+    },
+    "hasID" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasID",
+      "@type" : "@id"
+    },
+    "FireSuppressionTerminal" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FireSuppressionTerminal"
+    },
+    "TreatmentPlant" : {
+      "@id" : "https://saref.etsi.org/saref4watr/TreatmentPlant"
+    },
+    "featureIsMeasuredByDevice" : {
+      "@id" : "https://saref.etsi.org/saref4watr/featureIsMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "nominalSupplyWaterTemperatureCooling" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSupplyWaterTemperatureCooling",
+      "@type" : "@id"
+    },
+    "isOfferedBy" : {
+      "@id" : "https://saref.etsi.org/core/isOfferedBy",
+      "@type" : "@id"
+    },
+    "FeatureOfInterest" : {
+      "@id" : "https://saref.etsi.org/core/FeatureOfInterest"
+    },
+    "hasVersion" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasVersion",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "measuresProperty" : {
+      "@id" : "https://saref.etsi.org/core/measuresProperty",
+      "@type" : "@id"
+    },
+    "hours" : {
+      "@id" : "http://www.w3.org/2006/time#hours",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Pipe" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Pipe"
+    },
+    "MedicalDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/MedicalDevice"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "verticalSpacing" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/verticalSpacing",
+      "@type" : "@id"
+    },
+    "PressureUnit" : {
+      "@id" : "https://saref.etsi.org/core/PressureUnit"
+    },
+    "nominalHeatTransferArea" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalHeatTransferArea",
+      "@type" : "@id"
+    },
+    "heatTransferSurfaceArea" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/heatTransferSurfaceArea",
+      "@type" : "@id"
+    },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core/hasValue"
+    },
+    "rcc8ec" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8ec",
+      "@type" : "@id"
+    },
+    "hasMetricSpatialAccuracy" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasMetricSpatialAccuracy",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "isSimple" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#isSimple",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "flowArrangement" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/flowArrangement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "inLineRowSpacing" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/inLineRowSpacing",
+      "@type" : "@id"
+    },
+    "Motion" : {
+      "@id" : "https://saref.etsi.org/core/Motion"
+    },
+    "heatTransferTypeEnum" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/heatTransferTypeEnum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMetricPerimeterLength" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasMetricPerimeterLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "sfWithin" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+      "@type" : "@id"
+    },
+    "requiresPower" : {
+      "@id" : "https://saref.etsi.org/saref4watr/requiresPower"
+    },
+    "nominalHeatRejectionRate" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalHeatRejectionRate",
+      "@type" : "@id"
+    },
+    "refrigerantClass" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/refrigerantClass",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "HeatExchanger" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/HeatExchanger"
+    },
+    "connectsSystemThrough" : {
+      "@id" : "https://saref.etsi.org/saref4syst/connectsSystemThrough",
+      "@type" : "@id"
+    },
+    "hasMeterReadingType" : {
+      "@id" : "https://saref.etsi.org/core/hasMeterReadingType",
+      "@type" : "@id"
+    },
+    "energySource" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/energySource",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
+      "@type" : "@id"
+    },
+    "lampMaintenanceFactor" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/lampMaintenanceFactor",
+      "@type" : "@id"
+    },
+    "electricGeneratorEfficiency" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/electricGeneratorEfficiency",
+      "@type" : "@id"
+    },
+    "Appliance" : {
+      "@id" : "https://saref.etsi.org/core/Appliance"
+    },
+    "ehCoveredBy" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehCoveredBy",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "GetMeterDataCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetMeterDataCommand"
+    },
+    "contains" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/contains",
+      "@type" : "@id"
+    },
+    "mediaSource" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/mediaSource",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TAXRANK_1000000" : {
+      "@id" : "http://purl.obolibrary.org/obo/TAXRANK_1000000",
+      "@type" : "@id"
+    },
+    "integratedLightingType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/integratedLightingType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TimeZone" : {
+      "@id" : "http://www.w3.org/2006/time#TimeZone"
+    },
+    "historyNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "hasStartTimestamp" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasStartTimestamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "testPressure" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/testPressure",
+      "@type" : "@id"
+    },
+    "hasTurbulator" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hasTurbulator",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "insideDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/insideDiameter",
+      "@type" : "@id"
+    },
+    "months" : {
+      "@id" : "http://www.w3.org/2006/time#months",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "OnCommand" : {
+      "@id" : "https://saref.etsi.org/core/OnCommand"
+    },
+    "Damper" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Damper"
+    },
+    "second" : {
+      "@id" : "http://www.w3.org/2006/time#second",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Tank" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Tank"
+    },
+    "sfDisjoint" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfDisjoint",
+      "@type" : "@id"
+    },
+    "inXSDDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "forWeekDay" : {
+      "@id" : "https://saref.etsi.org/saref4watr/forWeekDay",
+      "@type" : "@id"
+    },
+    "familyName" : {
+      "@id" : "http://schema.org/familyName"
+    },
+    "isWaterStorageHeater" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isWaterStorageHeater",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasMetricVolume" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasMetricVolume",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "staggeredRowSpacing" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/staggeredRowSpacing",
+      "@type" : "@id"
+    },
+    "nominalLengthOrDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalLengthOrDiameter",
+      "@type" : "@id"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core/Measurement"
+    },
+    "accessType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/accessType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Boiler" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Boiler"
+    },
+    "StepUpCommand" : {
+      "@id" : "https://saref.etsi.org/core/StepUpCommand"
+    },
+    "nationalCadastralReference" : {
+      "@id" : "http://www.w3.org/2015/03/inspire/cp#nationalCadastralReference",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ConsumptionBasedTariff" : {
+      "@id" : "https://saref.etsi.org/saref4watr/ConsumptionBasedTariff"
+    },
+    "Thermometer" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Thermometer"
+    },
+    "audioVolume" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/audioVolume",
+      "@type" : "@id"
+    },
+    "isHostedBy" : {
+      "@id" : "http://www.w3.org/ns/sosa/isHostedBy",
+      "@type" : "@id"
+    },
+    "motorDriveType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/motorDriveType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "rcc8po" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8po",
+      "@type" : "@id"
+    },
+    "timeZone" : {
+      "@id" : "http://www.w3.org/2006/time#timeZone",
+      "@type" : "@id"
+    },
+    "Aquifer" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Aquifer"
+    },
+    "OnState" : {
+      "@id" : "https://saref.etsi.org/core/OnState"
+    },
+    "waterRequirement" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/waterRequirement",
+      "@type" : "@id"
+    },
+    "valvePattern" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/valvePattern",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasCommand" : {
+      "@id" : "https://saref.etsi.org/core/hasCommand",
+      "@type" : "@id"
+    },
+    "bladeShape" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/bladeShape",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "WaterMeter" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterMeter"
+    },
+    "refersToFeature" : {
+      "@id" : "https://saref.etsi.org/saref4city/refersToFeature",
+      "@type" : "@id"
+    },
+    "nominalCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalCapacity",
+      "@type" : "@id"
+    },
+    "Gas" : {
+      "@id" : "https://saref.etsi.org/core/Gas"
+    },
+    "hasBoundingBox" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasBoundingBox",
+      "@type" : "@id"
+    },
+    "BacterialProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/BacterialProperty"
+    },
+    "WaterInfrastructure" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterInfrastructure"
+    },
+    "ElectricMotor" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ElectricMotor"
+    },
+    "inDeployment" : {
+      "@id" : "http://www.w3.org/ns/ssn/inDeployment",
+      "@type" : "@id"
+    },
+    "Light" : {
+      "@id" : "https://saref.etsi.org/core/Light"
+    },
+    "remoteReading" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/remoteReading",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "numericDuration" : {
+      "@id" : "http://www.w3.org/2006/time#numericDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "shadingDeviceType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/shadingDeviceType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "WaterUse" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterUse"
+    },
+    "Animal" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Animal"
+    },
+    "Temperature" : {
+      "@id" : "https://saref.etsi.org/core/Temperature"
+    },
+    "homepage" : {
+      "@id" : "http://xmlns.com/foaf/0.1/homepage"
+    },
+    "coordinateDimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#coordinateDimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "email" : {
+      "@id" : "https://schema.org/email"
+    },
+    "DistributionDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/DistributionDevice"
+    },
+    "legend" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/legend",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TransportAsset" : {
+      "@id" : "https://saref.etsi.org/saref4watr/TransportAsset"
+    },
+    "SetLevelCommand" : {
+      "@id" : "https://saref.etsi.org/core/SetLevelCommand"
+    },
+    "supportedWeightMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/supportedWeightMax",
+      "@type" : "@id"
+    },
+    "Vent" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Vent"
+    },
+    "parentADM2" : {
+      "@id" : "https://www.geonames.org/ontology#parentADM2",
+      "@type" : "@id"
+    },
+    "GaugingStation" : {
+      "@id" : "https://saref.etsi.org/saref4watr/GaugingStation"
+    },
+    "isAccomplishedBy" : {
+      "@id" : "https://saref.etsi.org/core/isAccomplishedBy",
+      "@type" : "@id"
+    },
+    "idealShaftPower" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/idealShaftPower",
+      "@type" : "@id"
+    },
+    "hasProperty" : {
+      "@id" : "https://saref.etsi.org/core/hasProperty",
+      "@type" : "@id"
+    },
+    "PowerUnit" : {
+      "@id" : "https://saref.etsi.org/core/PowerUnit"
+    },
+    "Condenser" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Condenser"
+    },
+    "hasBillingPeriod" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasBillingPeriod",
+      "@type" : "@id"
+    },
+    "isMemberOf" : {
+      "@id" : "https://saref.etsi.org/saref4agri/isMemberOf",
+      "@type" : "@id"
+    },
+    "nominalEnergyConsumption" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalEnergyConsumption",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "based_near" : {
+      "@id" : "http://xmlns.com/foaf/0.1/based_near",
+      "@type" : "@id"
+    },
+    "secondaryAirFlowRateMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondaryAirFlowRateMax",
+      "@type" : "@id"
+    },
+    "arrangement" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/arrangement",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "AirToAirHeatRecovery" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/AirToAirHeatRecovery"
+    },
+    "hour" : {
+      "@id" : "http://www.w3.org/2006/time#hour",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "Soil" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Soil"
+    },
+    "xsdDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#xsdDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "DateTimeInterval" : {
+      "@id" : "http://www.w3.org/2006/time#DateTimeInterval"
+    },
+    "hasHarvestDate" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasHarvestDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "impellerDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/impellerDiameter",
+      "@type" : "@id"
+    },
+    "rightsHolder" : {
+      "@id" : "http://purl.org/dc/terms/rightsHolder"
+    },
+    "measurementMadeBy" : {
+      "@id" : "https://saref.etsi.org/core/measurementMadeBy",
+      "@type" : "@id"
+    },
+    "TransportElement" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/TransportElement"
+    },
+    "startCurrentFactor" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/startCurrentFactor",
+      "@type" : "@id"
+    },
+    "openPressureDrop" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/openPressureDrop",
+      "@type" : "@id"
+    },
+    "hasDuration" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasDuration",
+      "@type" : "@id"
+    },
+    "nominalSupplyWaterTemperatureHeating" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSupplyWaterTemperatureHeating",
+      "@type" : "@id"
+    },
+    "Price" : {
+      "@id" : "https://saref.etsi.org/core/Price"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "TRS" : {
+      "@id" : "http://www.w3.org/2006/time#TRS"
+    },
+    "hasSpatialAccuracy" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasSpatialAccuracy",
+      "@type" : "@id"
+    },
+    "forFinancialConsumption" : {
+      "@id" : "https://saref.etsi.org/saref4watr/forFinancialConsumption"
+    },
+    "nominalSorroundingHumidityCooling" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSorroundingHumidityCooling",
+      "@type" : "@id"
+    },
+    "rcc8tpp" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8tpp",
+      "@type" : "@id"
+    },
+    "FlowMovingDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FlowMovingDevice"
+    },
+    "controlsFeature" : {
+      "@id" : "https://saref.etsi.org/saref4watr/controlsFeature",
+      "@type" : "@id"
+    },
+    "LevelControlFunction" : {
+      "@id" : "https://saref.etsi.org/core/LevelControlFunction"
+    },
+    "asDGGS" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asDGGS",
+      "@type" : "http://www.opengis.net/ont/geosparql#dggsLiteral"
+    },
+    "WateringSystem" : {
+      "@id" : "https://saref.etsi.org/saref4agri/WateringSystem"
+    },
+    "DuctSilencer" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/DuctSilencer"
+    },
+    "hasArea" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasArea",
+      "@type" : "@id"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2008/05/skos#notation"
+    },
+    "primaryAirFlowRateMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/primaryAirFlowRateMin",
+      "@type" : "@id"
+    },
+    "heatTransferMedium" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/heatTransferMedium",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "outletTemperatureMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/outletTemperatureMin",
+      "@type" : "@id"
+    },
+    "TemporalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalPosition"
+    },
+    "OpenCommand" : {
+      "@id" : "https://saref.etsi.org/core/OpenCommand"
+    },
+    "ehMeet" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehMeet",
+      "@type" : "@id"
+    },
+    "imaginaryImpedanceRatio" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/imaginaryImpedanceRatio",
+      "@type" : "@id"
+    },
+    "HydroelectricPowerPlant" : {
+      "@id" : "https://saref.etsi.org/saref4watr/HydroelectricPowerPlant"
+    },
+    "BuildingObject" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/BuildingObject"
+    },
+    "sprayType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/sprayType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "forDayInMonth" : {
+      "@id" : "https://saref.etsi.org/saref4watr/forDayInMonth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gDay"
+    },
+    "connectionSize" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/connectionSize",
+      "@type" : "@id"
+    },
+    "DistributionControlDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/DistributionControlDevice"
+    },
+    "faceArea" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/faceArea",
+      "@type" : "@id"
+    },
+    "Agent" : {
+      "@id" : "https://saref.etsi.org/saref4city/Agent"
+    },
+    "nominalDepth" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalDepth",
+      "@type" : "@id"
+    },
+    "MilkingSensor" : {
+      "@id" : "https://saref.etsi.org/saref4agri/MilkingSensor"
+    },
+    "HVAC" : {
+      "@id" : "https://saref.etsi.org/core/HVAC"
+    },
+    "endShapeType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/endShapeType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "secondCurvatureRadius" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondCurvatureRadius",
+      "@type" : "@id"
+    },
+    "shortCircuitVoltage" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/shortCircuitVoltage",
+      "@type" : "@id"
+    },
+    "monthOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#monthOfYear",
+      "@type" : "@id"
+    },
+    "operatingMode" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/operatingMode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "primaryFrequency" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/primaryFrequency",
+      "@type" : "@id"
+    },
+    "pipeConnectionEnum" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/pipeConnectionEnum",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "givenName" : {
+      "@id" : "http://schema.org/givenName"
+    },
+    "GetSensingDataCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetSensingDataCommand"
+    },
+    "hasTemporalDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasTemporalDuration",
+      "@type" : "@id"
+    },
+    "Energy" : {
+      "@id" : "https://saref.etsi.org/core/Energy"
+    },
+    "capacityPeople" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/capacityPeople",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "nominalWidthOrDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalWidthOrDiameter",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "https://www.geonames.org/ontology#name"
+    },
+    "postalCode" : {
+      "@id" : "https://www.geonames.org/ontology#postalCode"
+    },
+    "OnOffState" : {
+      "@id" : "https://saref.etsi.org/core/OnOffState"
+    },
+    "Water" : {
+      "@id" : "https://saref.etsi.org/core/Water"
+    },
+    "hasPartWinding" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hasPartWinding",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "frameThickness" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/frameThickness",
+      "@type" : "@id"
+    },
+    "frameSize" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/frameSize",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasSerialization" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasSerialization",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "internalSurfaceArea" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/internalSurfaceArea",
+      "@type" : "@id"
+    },
+    "Pit" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Pit"
+    },
+    "numberOfBlades" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOfBlades",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "GetCurrentMeterValueCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetCurrentMeterValueCommand"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Transformer" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Transformer"
+    },
+    "Outlet" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Outlet"
+    },
+    "Electricity" : {
+      "@id" : "https://saref.etsi.org/core/Electricity"
+    },
+    "WateringValve" : {
+      "@id" : "https://saref.etsi.org/saref4agri/WateringValve"
+    },
+    "operatesAtRadioFrequency" : {
+      "@id" : "https://saref.etsi.org/saref4watr/operatesAtRadioFrequency"
+    },
+    "StartState" : {
+      "@id" : "https://saref.etsi.org/core/StartState"
+    },
+    "Building" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Building"
+    },
+    "FlowStorageDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FlowStorageDevice"
+    },
+    "intervalAfter" : {
+      "@id" : "http://www.w3.org/2006/time#intervalAfter",
+      "@type" : "@id"
+    },
+    "evaporationCoolant" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/evaporationCoolant",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTime" : {
+      "@id" : "https://saref.etsi.org/core/hasTime",
+      "@type" : "@id"
+    },
+    "OpenCloseFunction" : {
+      "@id" : "https://saref.etsi.org/core/OpenCloseFunction"
+    },
+    "isolatorCompressibility" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isolatorCompressibility",
+      "@type" : "@id"
+    },
+    "AnimalGroup" : {
+      "@id" : "https://saref.etsi.org/saref4agri/AnimalGroup"
+    },
+    "nominalAirFlowRate" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalAirFlowRate",
+      "@type" : "@id"
+    },
+    "hasMember" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasMember",
+      "@type" : "@id"
+    },
+    "numericPosition" : {
+      "@id" : "http://www.w3.org/2006/time#numericPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "hasSize" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasSize",
+      "@type" : "@id"
+    },
+    "Manhole" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Manhole"
+    },
+    "bladeEdge" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/bladeEdge",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "liftElevationDifference" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/liftElevationDifference",
+      "@type" : "@id"
+    },
+    "StepDownCommand" : {
+      "@id" : "https://saref.etsi.org/core/StepDownCommand"
+    },
+    "ActuatingFunction" : {
+      "@id" : "https://saref.etsi.org/core/ActuatingFunction"
+    },
+    "isContainedIn" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isContainedIn",
+      "@type" : "@id"
+    },
+    "isIlluminated" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isIlluminated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "partLoadRatioMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/partLoadRatioMax",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "FlowTreatmentDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FlowTreatmentDevice"
+    },
+    "application" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/application",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GetCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetCommand"
+    },
+    "Compressor" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Compressor"
+    },
+    "SwitchingDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/SwitchingDevice"
+    },
+    "Evaporator" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Evaporator"
+    },
+    "bodyMass" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/bodyMass",
+      "@type" : "@id"
+    },
+    "outletConnectionSize" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/outletConnectionSize",
+      "@type" : "@id"
+    },
+    "intervalOverlaps" : {
+      "@id" : "http://www.w3.org/2006/time#intervalOverlaps",
+      "@type" : "@id"
+    },
+    "CloseState" : {
+      "@id" : "https://saref.etsi.org/core/CloseState"
+    },
+    "isFreeHanging" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isFreeHanging",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isolatorStaticDeflection" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isolatorStaticDeflection",
+      "@type" : "@id"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "dateCopyrighted" : {
+      "@id" : "http://purl.org/dc/terms/dateCopyrighted"
+    },
+    "idealCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/idealCapacity",
+      "@type" : "@id"
+    },
+    "GeometryCollection" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#GeometryCollection"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "Intake" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Intake"
+    },
+    "hasPeriod" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasPeriod",
+      "@type" : "@id"
+    },
+    "intervalDuring" : {
+      "@id" : "http://www.w3.org/2006/time#intervalDuring",
+      "@type" : "@id"
+    },
+    "primaryVoltage" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/primaryVoltage",
+      "@type" : "@id"
+    },
+    "lockedRotorCurrent" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/lockedRotorCurrent",
+      "@type" : "@id"
+    },
+    "isDeployedAtSpace" : {
+      "@id" : "https://saref.etsi.org/saref4agri/isDeployedAtSpace",
+      "@type" : "@id"
+    },
+    "capacityWeight" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/capacityWeight",
+      "@type" : "@id"
+    },
+    "asGML" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#asGML",
+      "@type" : "http://www.opengis.net/ont/geosparql#gmlLiteral"
+    },
+    "minutes" : {
+      "@id" : "http://www.w3.org/2006/time#minutes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "ID" : {
+      "@id" : "https://saref.etsi.org/saref4agri/ID"
+    },
+    "StopState" : {
+      "@id" : "https://saref.etsi.org/core/StopState"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "Farm" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Farm"
+    },
+    "generates" : {
+      "@id" : "https://saref.etsi.org/saref4agri/generates",
+      "@type" : "@id"
+    },
+    "Estuary" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Estuary"
+    },
+    "hadPrimarySource" : {
+      "@id" : "http://www.w3.org/ns/prov#hadPrimarySource"
+    },
+    "nominalDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalDiameter",
+      "@type" : "@id"
+    },
+    "visibleLightReflectance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/visibleLightReflectance",
+      "@type" : "@id"
+    },
+    "hasBirthDate" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasBirthDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Profile" : {
+      "@id" : "https://saref.etsi.org/core/Profile"
+    },
+    "Container" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Container"
+    },
+    "isAbout" : {
+      "@id" : "https://saref.etsi.org/core/isAbout",
+      "@type" : "@id"
+    },
+    "alt" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+    },
+    "operation" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/operation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "powerOutputMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/powerOutputMax",
+      "@type" : "@id"
+    },
+    "Pressure" : {
+      "@id" : "https://saref.etsi.org/core/Pressure"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "operationalRiterial" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/operationalRiterial",
+      "@type" : "@id"
+    },
+    "hasSubSystem" : {
+      "@id" : "http://www.w3.org/ns/ssn/hasSubSystem",
+      "@type" : "@id"
+    },
+    "intervalMetBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalMetBy",
+      "@type" : "@id"
+    },
+    "FireHydrant" : {
+      "@id" : "https://saref.etsi.org/saref4watr/FireHydrant"
+    },
+    "seconds" : {
+      "@id" : "http://www.w3.org/2006/time#seconds",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "nominalFlowRate" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalFlowRate",
+      "@type" : "@id"
+    },
+    "SpatialObjectCollection" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObjectCollection"
+    },
+    "hasMetricLength" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasMetricLength",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "isMeasurementOf" : {
+      "@id" : "https://saref.etsi.org/core/isMeasurementOf",
+      "@type" : "@id"
+    },
+    "readOutType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/readOutType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "OpenCloseState" : {
+      "@id" : "https://saref.etsi.org/core/OpenCloseState"
+    },
+    "OffCommand" : {
+      "@id" : "https://saref.etsi.org/core/OffCommand"
+    },
+    "GeneralDurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#GeneralDurationDescription"
+    },
+    "nominalBodyDepth" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalBodyDepth",
+      "@type" : "@id"
+    },
+    "spectrumMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/spectrumMax",
+      "@type" : "@id"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "outsideDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/outsideDiameter",
+      "@type" : "@id"
+    },
+    "WaterAsset" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterAsset"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "rcc8tppi" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8tppi",
+      "@type" : "@id"
+    },
+    "hasHardwareVersion" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasHardwareVersion",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "week" : {
+      "@id" : "http://www.w3.org/2006/time#week",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "numberOfRows" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOfRows",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "ehEquals" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehEquals",
+      "@type" : "@id"
+    },
+    "rcc8ntpp" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8ntpp",
+      "@type" : "@id"
+    },
+    "nominalEvaporatingTemmperature" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalEvaporatingTemmperature",
+      "@type" : "@id"
+    },
+    "ElectricTimeControl" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ElectricTimeControl"
+    },
+    "Fan" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Fan"
+    },
+    "StorageAsset" : {
+      "@id" : "https://saref.etsi.org/saref4watr/StorageAsset"
+    },
+    "thermalEfficiency" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/thermalEfficiency",
+      "@type" : "@id"
+    },
+    "inXSDgYearMonth" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYearMonth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+    },
+    "Duration" : {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    },
+    "EnvironmentalProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/EnvironmentalProperty"
+    },
+    "nomminalRotationSpeed" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nomminalRotationSpeed",
+      "@type" : "@id"
+    },
+    "SpaceHeater" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/SpaceHeater"
+    },
+    "switchFunction" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/switchFunction",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Coil" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Coil"
+    },
+    "hasDateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#hasDateTimeDescription",
+      "@type" : "@id"
+    },
+    "SourceAsset" : {
+      "@id" : "https://saref.etsi.org/saref4watr/SourceAsset"
+    },
+    "DistributionFlowDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/DistributionFlowDevice"
+    },
+    "hasFirmwareVersion" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasFirmwareVersion",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "hasTypicalConsumption" : {
+      "@id" : "https://saref.etsi.org/core/hasTypicalConsumption",
+      "@type" : "@id"
+    },
+    "nominalSorroundingTemperatureCooling" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSorroundingTemperatureCooling",
+      "@type" : "@id"
+    },
+    "Lagoon" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Lagoon"
+    },
+    "netPositiveSuctionHead" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/netPositiveSuctionHead",
+      "@type" : "@id"
+    },
+    "partLoadRatioMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/partLoadRatioMin",
+      "@type" : "@id"
+    },
+    "pumpFlowRateMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/pumpFlowRateMax",
+      "@type" : "@id"
+    },
+    "bladeThickness" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/bladeThickness",
+      "@type" : "@id"
+    },
+    "years" : {
+      "@id" : "http://www.w3.org/2006/time#years",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "intervalFinishedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalFinishedBy",
+      "@type" : "@id"
+    },
+    "inTemporalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#inTemporalPosition",
+      "@type" : "@id"
+    },
+    "capacityControl" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/capacityControl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "flowCoefficient" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/flowCoefficient",
+      "@type" : "@id"
+    },
+    "hasPlantDate" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasPlantDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "EvaporativeCooler" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/EvaporativeCooler"
+    },
+    "Point" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+    },
+    "ElectricFlowStorageDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ElectricFlowStorageDevice"
+    },
+    "thermalTransmittance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/thermalTransmittance",
+      "@type" : "@id"
+    },
+    "thermalMassHeatCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/thermalMassHeatCapacity",
+      "@type" : "@id"
+    },
+    "spatialDimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#spatialDimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "lampBallastType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/lampBallastType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "KeyPerformanceIndicator" : {
+      "@id" : "https://saref.etsi.org/saref4city/KeyPerformanceIndicator"
+    },
+    "hasDefaultGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasDefaultGeometry",
+      "@type" : "@id"
+    },
+    "length" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/length",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "flowResistanceMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/flowResistanceMax",
+      "@type" : "@id"
+    },
+    "MonitoringInfrastructure" : {
+      "@id" : "https://saref.etsi.org/saref4watr/MonitoringInfrastructure"
+    },
+    "spectrumMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/spectrumMin",
+      "@type" : "@id"
+    },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "effectiveCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/effectiveCapacity",
+      "@type" : "@id"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/makesMeasurement",
+      "@type" : "@id"
+    },
+    "finalResistance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/finalResistance",
+      "@type" : "@id"
+    },
+    "inDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#inDateTime",
+      "@type" : "@id"
+    },
+    "primaryAirFlowRateMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/primaryAirFlowRateMax",
+      "@type" : "@id"
+    },
+    "parentADM3" : {
+      "@id" : "https://www.geonames.org/ontology#parentADM3",
+      "@type" : "@id"
+    },
+    "ConnectionPoint" : {
+      "@id" : "https://saref.etsi.org/saref4syst/ConnectionPoint"
+    },
+    "SensingFunction" : {
+      "@id" : "https://saref.etsi.org/core/SensingFunction"
+    },
+    "nominalWaterFlowCooling" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalWaterFlowCooling",
+      "@type" : "@id"
+    },
+    "flowResistanceMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/flowResistanceMin",
+      "@type" : "@id"
+    },
+    "hasBillingDate" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasBillingDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "outputCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/outputCapacity",
+      "@type" : "@id"
+    },
+    "DoorSwitch" : {
+      "@id" : "https://saref.etsi.org/core/DoorSwitch"
+    },
+    "SetAbsoluteLevelCommand" : {
+      "@id" : "https://saref.etsi.org/core/SetAbsoluteLevelCommand"
+    },
+    "hasDeployment" : {
+      "@id" : "http://www.w3.org/ns/ssn/hasDeployment",
+      "@type" : "@id"
+    },
+    "nominalRotationSpeed" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalRotationSpeed",
+      "@type" : "@id"
+    },
+    "isExternal" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isExternal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "CoolingTower" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/CoolingTower"
+    },
+    "isPluggableOutlet" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isPluggableOutlet",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "circuitType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/circuitType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "represents" : {
+      "@id" : "https://saref.etsi.org/core/represents",
+      "@type" : "@id"
+    },
+    "ElectricGenerator" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ElectricGenerator"
+    },
+    "failPosition" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/failPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GetMeterHistoryCommand" : {
+      "@id" : "https://saref.etsi.org/core/GetMeterHistoryCommand"
+    },
+    "StopCommand" : {
+      "@id" : "https://saref.etsi.org/core/StopCommand"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
+    "storageType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/storageType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "nominalReturnWaterTemperatureHeating" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalReturnWaterTemperatureHeating",
+      "@type" : "@id"
+    },
+    "StartStopState" : {
+      "@id" : "https://saref.etsi.org/core/StartStopState"
+    },
+    "coverWidth" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/coverWidth",
+      "@type" : "@id"
+    },
+    "manualOverride" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/manualOverride",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "primaryCurrent" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/primaryCurrent",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "https://saref.etsi.org/core/Property"
+    },
+    "workingPressure" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/workingPressure",
+      "@type" : "@id"
+    },
+    "evaporationMediumType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/evaporationMediumType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isNeutralSecondaryTerminalAvailable" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isNeutralSecondaryTerminalAvailable",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasSpatialResolution" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasSpatialResolution",
+      "@type" : "@id"
+    },
+    "sfContains" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
+      "@type" : "@id"
+    },
+    "hasFunction" : {
+      "@id" : "https://saref.etsi.org/core/hasFunction",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "temperatureClassification" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/temperatureClassification",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Patrimony" : {
+      "@id" : "http://bigg-project.eu/ontology#Patrimony"
+    },
+    "Command" : {
+      "@id" : "https://saref.etsi.org/core/Command"
+    },
+    "hasPhenomenonTime" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasPhenomenonTime",
+      "@type" : "@id"
+    },
+    "year" : {
+      "@id" : "http://www.w3.org/2006/time#year"
+    },
+    "days" : {
+      "@id" : "http://www.w3.org/2006/time#days",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "numberOfSections" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOfSections",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "inXSDDateTimeStamp" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "SwitchOnService" : {
+      "@id" : "https://saref.etsi.org/core/SwitchOnService"
+    },
+    "isUsedFor" : {
+      "@id" : "https://saref.etsi.org/core/isUsedFor",
+      "@type" : "@id"
+    },
+    "Parcel" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Parcel"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "Occupancy" : {
+      "@id" : "https://saref.etsi.org/core/Occupancy"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://saref.etsi.org/core/TemperatureSensor"
+    },
+    "limitingTerminalSize" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/limitingTerminalSize",
+      "@type" : "@id"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#pattern"
+    },
+    "LightSwitch" : {
+      "@id" : "https://saref.etsi.org/core/LightSwitch"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "PauseCommand" : {
+      "@id" : "https://saref.etsi.org/core/PauseCommand"
+    },
+    "Glacier" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Glacier"
+    },
+    "Interceptor" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Interceptor"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core/isMeasuredIn",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "ThresholdBasedTariff" : {
+      "@id" : "https://saref.etsi.org/saref4watr/ThresholdBasedTariff"
+    },
+    "Sea" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Sea"
+    },
+    "coilLength" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/coilLength",
+      "@type" : "@id"
+    },
+    "initialResistance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/initialResistance",
+      "@type" : "@id"
+    },
+    "Coal" : {
+      "@id" : "https://saref.etsi.org/core/Coal"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "nominalHeatTransferCoefficient" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalHeatTransferCoefficient",
+      "@type" : "@id"
+    },
+    "Pluviometer" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Pluviometer"
+    },
+    "ehOverlap" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehOverlap",
+      "@type" : "@id"
+    },
+    "Smoke" : {
+      "@id" : "https://saref.etsi.org/core/Smoke"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "FlowMeter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FlowMeter"
+    },
+    "hasDeathDate" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasDeathDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "valveOperation" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/valveOperation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasMeterReading" : {
+      "@id" : "https://saref.etsi.org/core/hasMeterReading",
+      "@type" : "@id"
+    },
+    "Connection" : {
+      "@id" : "https://saref.etsi.org/saref4syst/Connection"
+    },
+    "fireExit" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/fireExit",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "inTimePosition" : {
+      "@id" : "http://www.w3.org/2006/time#inTimePosition",
+      "@type" : "@id"
+    },
+    "consistsOf" : {
+      "@id" : "https://saref.etsi.org/core/consistsOf",
+      "@type" : "@id"
+    },
+    "nominalParticleGeometricStandardDeviation" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalParticleGeometricStandardDeviation",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "managesFarm" : {
+      "@id" : "https://saref.etsi.org/saref4agri/managesFarm",
+      "@type" : "@id"
+    },
+    "Year" : {
+      "@id" : "http://www.w3.org/2006/time#Year"
+    },
+    "connectsSystem" : {
+      "@id" : "https://saref.etsi.org/saref4syst/connectsSystem",
+      "@type" : "@id"
+    },
+    "nominalVolumetricCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalVolumetricCapacity",
+      "@type" : "@id"
+    },
+    "SetRelativeLevelCommand" : {
+      "@id" : "https://saref.etsi.org/core/SetRelativeLevelCommand"
+    },
+    "inside" : {
+      "@id" : "http://www.w3.org/2006/time#inside",
+      "@type" : "@id"
+    },
+    "motorEnclosureType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/motorEnclosureType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasLastUpdateDate" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasLastUpdateDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "nominalCondensingTemperature" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalCondensingTemperature",
+      "@type" : "@id"
+    },
+    "EventFunction" : {
+      "@id" : "https://saref.etsi.org/core/EventFunction"
+    },
+    "nominalSorroundingTemperatureHeating" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSorroundingTemperatureHeating",
+      "@type" : "@id"
+    },
+    "connectsSystemAt" : {
+      "@id" : "https://saref.etsi.org/saref4syst/connectsSystemAt",
+      "@type" : "@id"
+    },
+    "isCommandOf" : {
+      "@id" : "https://saref.etsi.org/core/isCommandOf",
+      "@type" : "@id"
+    },
+    "fluidFlowRateMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/fluidFlowRateMin",
+      "@type" : "@id"
+    },
+    "vibrationTransmissibility" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/vibrationTransmissibility",
+      "@type" : "@id"
+    },
+    "compressorSpeed" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/compressorSpeed",
+      "@type" : "@id"
+    },
+    "nominalSensibleCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSensibleCapacity",
+      "@type" : "@id"
+    },
+    "secondaryCurrentType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondaryCurrentType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EatingActivitySensor" : {
+      "@id" : "https://saref.etsi.org/saref4agri/EatingActivitySensor"
+    },
+    "sfTouches" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfTouches",
+      "@type" : "@id"
+    },
+    "nominalLatentCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalLatentCapacity",
+      "@type" : "@id"
+    },
+    "minute" : {
+      "@id" : "http://www.w3.org/2006/time#minute",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "FeatureCollection" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#FeatureCollection"
+    },
+    "WeightSensor" : {
+      "@id" : "https://saref.etsi.org/saref4agri/WeightSensor"
+    },
+    "volumen" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/volumen",
+      "@type" : "@id"
+    },
+    "hasSensingRange" : {
+      "@id" : "https://saref.etsi.org/core/hasSensingRange",
+      "@type" : "@id"
+    },
+    "numberOfCircuits" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOfCircuits",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "MovementActivitySensor" : {
+      "@id" : "https://saref.etsi.org/saref4agri/MovementActivitySensor"
+    },
+    "MultiLevelState" : {
+      "@id" : "https://saref.etsi.org/core/MultiLevelState"
+    },
+    "TemperatureUnit" : {
+      "@id" : "https://saref.etsi.org/core/TemperatureUnit"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "isPropertyOf" : {
+      "@id" : "https://saref.etsi.org/core/isPropertyOf",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "isAssessedBy" : {
+      "@id" : "https://saref.etsi.org/saref4city/isAssessedBy",
+      "@type" : "@id"
+    },
+    "hasCreationDate" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasCreationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Pump" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Pump"
+    },
+    "hasSensorType" : {
+      "@id" : "https://saref.etsi.org/core/hasSensorType",
+      "@type" : "@id"
+    },
+    "WeatherStation" : {
+      "@id" : "https://saref.etsi.org/saref4agri/WeatherStation"
+    },
+    "replaces" : {
+      "@id" : "http://purl.org/dc/terms/replaces"
+    },
+    "StartStopFunction" : {
+      "@id" : "https://saref.etsi.org/core/StartStopFunction"
+    },
+    "hasState" : {
+      "@id" : "https://saref.etsi.org/core/hasState",
+      "@type" : "@id"
+    },
+    "Channel" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Channel"
+    },
+    "hasKPI" : {
+      "@id" : "https://saref.etsi.org/saref4city/hasKPI",
+      "@type" : "@id"
+    },
+    "inletConnectionSize" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/inletConnectionSize",
+      "@type" : "@id"
+    },
+    "operationTemperatureMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/operationTemperatureMin",
+      "@type" : "@id"
+    },
+    "nominalPartLoadRatio" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalPartLoadRatio",
+      "@type" : "@id"
+    },
+    "foulingFactor" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/foulingFactor",
+      "@type" : "@id"
+    },
+    "State" : {
+      "@id" : "https://saref.etsi.org/core/State"
+    },
+    "intervalBefore" : {
+      "@id" : "http://www.w3.org/2006/time#intervalBefore",
+      "@type" : "@id"
+    },
+    "Alarm" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Alarm"
+    },
+    "lampCompensationType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/lampCompensationType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "sfOverlaps" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfOverlaps",
+      "@type" : "@id"
+    },
+    "refersToTime" : {
+      "@id" : "https://saref.etsi.org/saref4city/refersToTime",
+      "@type" : "@id"
+    },
+    "hasCentroid" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasCentroid",
+      "@type" : "@id"
+    },
+    "hasProfile" : {
+      "@id" : "https://saref.etsi.org/core/hasProfile",
+      "@type" : "@id"
+    },
+    "solarReflectance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/solarReflectance",
+      "@type" : "@id"
+    },
+    "isEmpty" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#isEmpty",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "outletTemperatureMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/outletTemperatureMax",
+      "@type" : "@id"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://saref.etsi.org/core/relatesToProperty",
+      "@type" : "@id"
+    },
+    "OnOffFunction" : {
+      "@id" : "https://saref.etsi.org/core/OnOffFunction"
+    },
+    "month" : {
+      "@id" : "http://www.w3.org/2006/time#month"
+    },
+    "weeks" : {
+      "@id" : "http://www.w3.org/2006/time#weeks",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "size" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/size",
+      "@type" : "@id"
+    },
+    "MonthOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#MonthOfYear"
+    },
+    "Function" : {
+      "@id" : "https://saref.etsi.org/core/Function"
+    },
+    "FlowTerminal" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FlowTerminal"
+    },
+    "nominalPowerConsumption" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalPowerConsumption",
+      "@type" : "@id"
+    },
+    "Engine" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Engine"
+    },
+    "ehContains" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehContains",
+      "@type" : "@id"
+    },
+    "Actuator" : {
+      "@id" : "https://saref.etsi.org/core/Actuator"
+    },
+    "Currency" : {
+      "@id" : "https://saref.etsi.org/core/Currency"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "secondaryFrequency" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondaryFrequency",
+      "@type" : "@id"
+    },
+    "visibleLightTransmittance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/visibleLightTransmittance",
+      "@type" : "@id"
+    },
+    "Controller" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Controller"
+    },
+    "BuildingSpace" : {
+      "@id" : "https://saref.etsi.org/saref4agri/BuildingSpace"
+    },
+    "isIntendedFor" : {
+      "@id" : "https://saref.etsi.org/saref4watr/isIntendedFor",
+      "@type" : "@id"
+    },
+    "IlluminanceUnit" : {
+      "@id" : "https://saref.etsi.org/core/IlluminanceUnit"
+    },
+    "hasMeasurement" : {
+      "@id" : "https://saref.etsi.org/core/hasMeasurement",
+      "@type" : "@id"
+    },
+    "placementType" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/placementType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "solarTransmittance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/solarTransmittance",
+      "@type" : "@id"
+    },
+    "AudioVisualAppliance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/AudioVisualAppliance"
+    },
+    "WaterDevice" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterDevice"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "https://saref.etsi.org/core/Service"
+    },
+    "isNeutralPrimaryTerminalAvailable" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isNeutralPrimaryTerminalAvailable",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "contributedLuminousFlux" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/contributedLuminousFlux",
+      "@type" : "@id"
+    },
+    "day" : {
+      "@id" : "http://www.w3.org/2006/time#day"
+    },
+    "isKPIOf" : {
+      "@id" : "https://saref.etsi.org/saref4city/isKPIOf",
+      "@type" : "@id"
+    },
+    "nominalReturnWaterTemperatureCooling" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalReturnWaterTemperatureCooling",
+      "@type" : "@id"
+    },
+    "controlsProperty" : {
+      "@id" : "https://saref.etsi.org/core/controlsProperty",
+      "@type" : "@id"
+    },
+    "nominalFilterFaceVelocity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalFilterFaceVelocity",
+      "@type" : "@id"
+    },
+    "nominalParticleGeometricMeanDiameter" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalParticleGeometricMeanDiameter",
+      "@type" : "@id"
+    },
+    "Polygon" : {
+      "@id" : "http://www.opengis.net/ont/sf#Polygon"
+    },
+    "StorageInfrastructure" : {
+      "@id" : "https://saref.etsi.org/saref4watr/StorageInfrastructure"
+    },
+    "hasHotGasBypass" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hasHotGasBypass",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "intervalEquals" : {
+      "@id" : "http://www.w3.org/2006/time#intervalEquals",
+      "@type" : "@id"
+    },
+    "nominalMediaSurfaceVelocity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalMediaSurfaceVelocity",
+      "@type" : "@id"
+    },
+    "Chiller" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Chiller"
+    },
+    "before" : {
+      "@id" : "http://www.w3.org/2006/time#before",
+      "@type" : "@id"
+    },
+    "nominalSupplyVoltage" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSupplyVoltage",
+      "@type" : "@id"
+    },
+    "hasReceived" : {
+      "@id" : "https://saref.etsi.org/saref4agri/hasReceived",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "nominalTotalPressure" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalTotalPressure",
+      "@type" : "@id"
+    },
+    "January" : {
+      "@id" : "http://www.w3.org/2006/time#January"
+    },
+    "electricMotorEfficiency" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/electricMotorEfficiency",
+      "@type" : "@id"
+    },
+    "Lake" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Lake"
+    },
+    "deployedSystem" : {
+      "@id" : "http://www.w3.org/ns/ssn/deployedSystem",
+      "@type" : "@id"
+    },
+    "System" : {
+      "@id" : "http://www.w3.org/ns/ssn/System"
+    },
+    "EnergyMeter" : {
+      "@id" : "http://bigg-project.eu/ontology#EnergyMeter"
+    },
+    "CadastralParcel" : {
+      "@id" : "http://www.w3.org/2015/03/inspire/cp#CadastralParcel"
+    },
+    "thermalConductivity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/thermalConductivity",
+      "@type" : "@id"
+    },
+    "OpenState" : {
+      "@id" : "https://saref.etsi.org/core/OpenState"
+    },
+    "StartCommand" : {
+      "@id" : "https://saref.etsi.org/core/StartCommand"
+    },
+    "ToggleCommand" : {
+      "@id" : "https://saref.etsi.org/core/ToggleCommand"
+    },
+    "internalControl" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/internalControl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isDesignedFor" : {
+      "@id" : "https://saref.etsi.org/saref4watr/isDesignedFor",
+      "@type" : "@id"
+    },
+    "roughness" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/roughness",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "FlowController" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/FlowController"
+    },
+    "firstCurvatureRadius" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/firstCurvatureRadius",
+      "@type" : "@id"
+    },
+    "dimension" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#dimension",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "street-address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#street-address"
+    },
+    "forVolumeFlow" : {
+      "@id" : "https://saref.etsi.org/saref4watr/forVolumeFlow"
+    },
+    "hasXSDDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasXSDDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#duration"
+    },
+    "Device" : {
+      "@id" : "https://saref.etsi.org/core/Device"
+    },
+    "UnitaryControlElement" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/UnitaryControlElement"
+    },
+    "EnergyDevice" : {
+      "@id" : "http://bigg-project.eu/ontology#EnergyDevice"
+    },
+    "nominalBodyLength" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalBodyLength",
+      "@type" : "@id"
+    },
+    "deployedOnPlatform" : {
+      "@id" : "http://www.w3.org/ns/ssn/deployedOnPlatform",
+      "@type" : "@id"
+    },
+    "Tariff" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Tariff"
+    },
+    "nominalUa" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalUa",
+      "@type" : "@id"
+    },
+    "hasFabricationNumber" : {
+      "@id" : "https://saref.etsi.org/saref4watr/hasFabricationNumber",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "WaterMeterProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterMeterProperty"
+    },
+    "intervalStarts" : {
+      "@id" : "http://www.w3.org/2006/time#intervalStarts",
+      "@type" : "@id"
+    },
+    "apparentPowerMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/apparentPowerMax",
+      "@type" : "@id"
+    },
+    "Valve" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/Valve"
+    },
+    "ProtectiveDeviceTrippingUnit" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ProtectiveDeviceTrippingUnit"
+    },
+    "intervalIn" : {
+      "@id" : "http://www.w3.org/2006/time#intervalIn",
+      "@type" : "@id"
+    },
+    "nominalWaterFlowHeating" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalWaterFlowHeating",
+      "@type" : "@id"
+    },
+    "subSystemOf" : {
+      "@id" : "https://saref.etsi.org/saref4syst/subSystemOf",
+      "@type" : "@id"
+    },
+    "hasDescription" : {
+      "@id" : "https://saref.etsi.org/core/hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "inXSDDate" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasLock" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hasLock",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://saref.etsi.org/core/hasTimestamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "WateringGun" : {
+      "@id" : "https://saref.etsi.org/saref4agri/WateringGun"
+    },
+    "rcc8ntppi" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8ntppi",
+      "@type" : "@id"
+    },
+    "heatExchangeArea" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/heatExchangeArea",
+      "@type" : "@id"
+    },
+    "Area" : {
+      "@id" : "http://bigg-project.eu/ontology#Area"
+    },
+    "horizontalSpacing" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/horizontalSpacing",
+      "@type" : "@id"
+    },
+    "waterInletTemperatureMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/waterInletTemperatureMax",
+      "@type" : "@id"
+    },
+    "MicrobialProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/MicrobialProperty"
+    },
+    "leakageFullyClosed" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/leakageFullyClosed",
+      "@type" : "@id"
+    },
+    "airFlowRateMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/airFlowRateMin",
+      "@type" : "@id"
+    },
+    "defaultGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#defaultGeometry",
+      "@type" : "@id"
+    },
+    "Power" : {
+      "@id" : "https://saref.etsi.org/core/Power"
+    },
+    "Task" : {
+      "@id" : "https://saref.etsi.org/core/Task"
+    },
+    "numberOfPanels" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOfPanels",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "WaterFlowProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterFlowProperty"
+    },
+    "hasPerimeterLength" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasPerimeterLength",
+      "@type" : "@id"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "internalWaterVolume" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/internalWaterVolume",
+      "@type" : "@id"
+    },
+    "WaterProperty" : {
+      "@id" : "https://saref.etsi.org/saref4watr/WaterProperty"
+    },
+    "realImpedanceRatio" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/realImpedanceRatio",
+      "@type" : "@id"
+    },
+    "intervalStartedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalStartedBy",
+      "@type" : "@id"
+    },
+    "ambientDesignDryBulbTemperature" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ambientDesignDryBulbTemperature",
+      "@type" : "@id"
+    },
+    "ehCovers" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehCovers",
+      "@type" : "@id"
+    },
+    "ehDisjoint" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#ehDisjoint",
+      "@type" : "@id"
+    },
+    "numberOsSockets" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOsSockets",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sfEquals" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfEquals",
+      "@type" : "@id"
+    },
+    "coverLength" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/coverLength",
+      "@type" : "@id"
+    },
+    "weight" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/weight",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "receives" : {
+      "@id" : "https://saref.etsi.org/saref4agri/receives",
+      "@type" : "@id"
+    },
+    "orientation" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/orientation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "nominalSupplyVoltageMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSupplyVoltageMax",
+      "@type" : "@id"
+    },
+    "Time" : {
+      "@id" : "https://saref.etsi.org/core/Time"
+    },
+    "operationTemperatureMax" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/operationTemperatureMax",
+      "@type" : "@id"
+    },
+    "nominalPressureDrop" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalPressureDrop",
+      "@type" : "@id"
+    },
+    "EnergyConversionDevice" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/EnergyConversionDevice"
+    },
+    "numberOfCells" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/numberOfCells",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "isLocatedIn" : {
+      "@id" : "https://saref.etsi.org/saref4agri/isLocatedIn",
+      "@type" : "@id"
+    },
+    "nominalSupplyVoltageMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalSupplyVoltageMin",
+      "@type" : "@id"
+    },
+    "nominalBodyWidth" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalBodyWidth",
+      "@type" : "@id"
+    },
+    "operatingWeight" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/operatingWeight",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "isSpaceOf" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isSpaceOf",
+      "@type" : "@id"
+    },
+    "rcc8dc" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#rcc8dc",
+      "@type" : "@id"
+    },
+    "PhysicalObject" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/PhysicalObject"
+    },
+    "assesses" : {
+      "@id" : "https://saref.etsi.org/saref4city/assesses",
+      "@type" : "@id"
+    },
+    "PersonalProfileDocument" : {
+      "@id" : "http://xmlns.com/foaf/0.1/PersonalProfileDocument"
+    },
+    "Reservoir" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Reservoir"
+    },
+    "hasExteriorInsulation" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/hasExteriorInsulation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isGuarded" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/isGuarded",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "nominalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#nominalPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Ocean" : {
+      "@id" : "https://saref.etsi.org/saref4watr/Ocean"
+    },
+    "offers" : {
+      "@id" : "https://saref.etsi.org/core/offers",
+      "@type" : "@id"
+    },
+    "intervalDisjoint" : {
+      "@id" : "http://www.w3.org/2006/time#intervalDisjoint",
+      "@type" : "@id"
+    },
+    "ElectricAppliance" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ElectricAppliance"
+    },
+    "nominalHeatingCapacity" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/nominalHeatingCapacity",
+      "@type" : "@id"
+    },
+    "powerSource" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/powerSource",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Farmer" : {
+      "@id" : "https://saref.etsi.org/saref4agri/Farmer"
+    },
+    "waterPressureMin" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/waterPressureMin",
+      "@type" : "@id"
+    },
+    "Sensor" : {
+      "@id" : "https://saref.etsi.org/core/Sensor"
+    },
+    "secondaryVoltage" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/secondaryVoltage",
+      "@type" : "@id"
+    },
+    "unitType" : {
+      "@id" : "http://www.w3.org/2006/time#unitType",
+      "@type" : "@id"
+    },
+    "hasMetricArea" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasMetricArea",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "dayOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#dayOfYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "ventilatingPipeSize" : {
+      "@id" : "https://saref.etsi.org/saref4bldg/ventilatingPipeSize",
+      "@type" : "@id"
+    }
+  }
+}
